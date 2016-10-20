@@ -1,6 +1,6 @@
 只支持 Mac 10.9 以上版本
 
-1、点击下载 Log Guru
+1、点击下载 [Log Guru](https://github.com/FIRHQ/LogGuru/releases/download/v1.0/LogGuru-Mac-1.0.zip)
 
 2、解压打开 Log Guru
 
