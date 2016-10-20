@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9612BE1DB8938100DE647E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612BD1DB8938100DE647E /* AppDelegate.m */; };
+		1F9612C11DB8938100DE647E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612C01DB8938100DE647E /* main.m */; };
+		1F9612C31DB8938100DE647E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9612C21DB8938100DE647E /* Assets.xcassets */; };
+		1F9612C61DB8938100DE647E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F9612C41DB8938100DE647E /* MainMenu.xib */; };
+		1F9612D11DB8938100DE647E /* LogGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612D01DB8938100DE647E /* LogGuruTests.m */; };
+		1F9612DD1DB8946100DE647E /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9612DC1DB8946100DE647E /* MobileDevice.framework */; };
+		1F9612DE1DB8946100DE647E /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9612DC1DB8946100DE647E /* MobileDevice.framework */; };
+		1F9612E11DB8B04F00DE647E /* FIRUSBLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612E01DB8B04F00DE647E /* FIRUSBLoger.m */; };
+		1F9612E21DB8B04F00DE647E /* FIRUSBLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612E01DB8B04F00DE647E /* FIRUSBLoger.m */; };
+		1F9612E41DB8B13000DE647E /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F9612E31DB8B13000DE647E /* AppIcon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F9612CD1DB8938100DE647E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F9612B11DB8938100DE647E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F9612B81DB8938100DE647E;
+			remoteInfo = LogGuru;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F9612B91DB8938100DE647E /* LogGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9612BC1DB8938100DE647E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F9612BD1DB8938100DE647E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F9612C01DB8938100DE647E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F9612C21DB8938100DE647E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F9612C51DB8938100DE647E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1F9612C71DB8938100DE647E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9612CC1DB8938100DE647E /* LogGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F9612D01DB8938100DE647E /* LogGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogGuruTests.m; sourceTree = "<group>"; };
+		1F9612D21DB8938100DE647E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9612DB1DB8944C00DE647E /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
+		1F9612DC1DB8946100DE647E /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileDevice.framework; path = ../../../../../System/Library/PrivateFrameworks/MobileDevice.framework; sourceTree = "<group>"; };
+		1F9612DF1DB8B04F00DE647E /* FIRUSBLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRUSBLoger.h; sourceTree = "<group>"; };
+		1F9612E01DB8B04F00DE647E /* FIRUSBLoger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIRUSBLoger.m; sourceTree = "<group>"; };
+		1F9612E31DB8B13000DE647E /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F9612B61DB8938100DE647E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9612DD1DB8946100DE647E /* MobileDevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9612C91DB8938100DE647E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9612DE1DB8946100DE647E /* MobileDevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F9612B01DB8938100DE647E = {
+			isa = PBXGroup;
+			children = (
+				1F9612BB1DB8938100DE647E /* LogGuru */,
+				1F9612CF1DB8938100DE647E /* LogGuruTests */,
+				1F9612BA1DB8938100DE647E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F9612BA1DB8938100DE647E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F9612B91DB8938100DE647E /* LogGuru.app */,
+				1F9612CC1DB8938100DE647E /* LogGuruTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F9612BB1DB8938100DE647E /* LogGuru */ = {
+			isa = PBXGroup;
+			children = (
+				1F9612BC1DB8938100DE647E /* AppDelegate.h */,
+				1F9612BD1DB8938100DE647E /* AppDelegate.m */,
+				1F9612DF1DB8B04F00DE647E /* FIRUSBLoger.h */,
+				1F9612E01DB8B04F00DE647E /* FIRUSBLoger.m */,
+				1F9612BF1DB8938100DE647E /* Supporting Files */,
+			);
+			path = LogGuru;
+			sourceTree = "<group>";
+		};
+		1F9612BF1DB8938100DE647E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F9612C21DB8938100DE647E /* Assets.xcassets */,
+				1F9612C71DB8938100DE647E /* Info.plist */,
+				1F9612C41DB8938100DE647E /* MainMenu.xib */,
+				1F9612E31DB8B13000DE647E /* AppIcon.icns */,
+				1F9612DC1DB8946100DE647E /* MobileDevice.framework */,
+				1F9612DB1DB8944C00DE647E /* MobileDevice.h */,
+				1F9612C01DB8938100DE647E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F9612CF1DB8938100DE647E /* LogGuruTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F9612D01DB8938100DE647E /* LogGuruTests.m */,
+				1F9612D21DB8938100DE647E /* Info.plist */,
+			);
+			path = LogGuruTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F9612B81DB8938100DE647E /* LogGuru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9612D51DB8938100DE647E /* Build configuration list for PBXNativeTarget "LogGuru" */;
+			buildPhases = (
+				1F9612B51DB8938100DE647E /* Sources */,
+				1F9612B61DB8938100DE647E /* Frameworks */,
+				1F9612B71DB8938100DE647E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogGuru;
+			productName = LogGuru;
+			productReference = 1F9612B91DB8938100DE647E /* LogGuru.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F9612CB1DB8938100DE647E /* LogGuruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9612D81DB8938100DE647E /* Build configuration list for PBXNativeTarget "LogGuruTests" */;
+			buildPhases = (
+				1F9612C81DB8938100DE647E /* Sources */,
+				1F9612C91DB8938100DE647E /* Frameworks */,
+				1F9612CA1DB8938100DE647E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F9612CE1DB8938100DE647E /* PBXTargetDependency */,
+			);
+			name = LogGuruTests;
+			productName = LogGuruTests;
+			productReference = 1F9612CC1DB8938100DE647E /* LogGuruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F9612B11DB8938100DE647E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = im.fir.logguru;
+				TargetAttributes = {
+					1F9612B81DB8938100DE647E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1F9612CB1DB8938100DE647E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1F9612B81DB8938100DE647E;
+					};
+				};
+			};
+			buildConfigurationList = 1F9612B41DB8938100DE647E /* Build configuration list for PBXProject "LogGuru" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F9612B01DB8938100DE647E;
+			productRefGroup = 1F9612BA1DB8938100DE647E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F9612B81DB8938100DE647E /* LogGuru */,
+				1F9612CB1DB8938100DE647E /* LogGuruTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F9612B71DB8938100DE647E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9612C31DB8938100DE647E /* Assets.xcassets in Resources */,
+				1F9612C61DB8938100DE647E /* MainMenu.xib in Resources */,
+				1F9612E41DB8B13000DE647E /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9612CA1DB8938100DE647E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F9612B51DB8938100DE647E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9612C11DB8938100DE647E /* main.m in Sources */,
+				1F9612BE1DB8938100DE647E /* AppDelegate.m in Sources */,
+				1F9612E11DB8B04F00DE647E /* FIRUSBLoger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F9612C81DB8938100DE647E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9612E21DB8B04F00DE647E /* FIRUSBLoger.m in Sources */,
+				1F9612D11DB8938100DE647E /* LogGuruTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F9612CE1DB8938100DE647E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F9612B81DB8938100DE647E /* LogGuru */;
+			targetProxy = 1F9612CD1DB8938100DE647E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F9612C41DB8938100DE647E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F9612C51DB8938100DE647E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F9612D31DB8938100DE647E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F9612D41DB8938100DE647E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F9612D61DB8938100DE647E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = LogGuru/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = im.fir.logguru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F9612D71DB8938100DE647E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = LogGuru/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = im.fir.logguru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F9612D91DB8938100DE647E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = LogGuruTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = fir.im.LogGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogGuru.app/Contents/MacOS/LogGuru";
+			};
+			name = Debug;
+		};
+		1F9612DA1DB8938100DE647E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				INFOPLIST_FILE = LogGuruTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = fir.im.LogGuruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogGuru.app/Contents/MacOS/LogGuru";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F9612B41DB8938100DE647E /* Build configuration list for PBXProject "LogGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9612D31DB8938100DE647E /* Debug */,
+				1F9612D41DB8938100DE647E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F9612D51DB8938100DE647E /* Build configuration list for PBXNativeTarget "LogGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9612D61DB8938100DE647E /* Debug */,
+				1F9612D71DB8938100DE647E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F9612D81DB8938100DE647E /* Build configuration list for PBXNativeTarget "LogGuruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F9612D91DB8938100DE647E /* Debug */,
+				1F9612DA1DB8938100DE647E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F9612B11DB8938100DE647E /* Project object */;
+}
