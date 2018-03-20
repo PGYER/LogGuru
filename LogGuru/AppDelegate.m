@@ -15,6 +15,7 @@
 @property (weak) IBOutlet NSTextField *statView;
 @property (unsafe_unretained) IBOutlet NSTextView *logView;
 @property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *filterInfoLabel;
 
 @property (strong) FIRUSBLoger *logger;
 
@@ -62,6 +63,13 @@
     }
     
     if ([self.blockProcesses containsObject:logInfo.process]) {
+        return;
+    }
+    
+    if (logInfo.process
+        && self.filterInfoLabel.stringValue
+        && self.filterInfoLabel.stringValue.length > 0
+        && [logInfo.log rangeOfString:self.filterInfoLabel.stringValue].length == 0) {
         return;
     }
     
