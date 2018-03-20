@@ -12,11 +12,11 @@
 		1F9612C31DB8938100DE647E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9612C21DB8938100DE647E /* Assets.xcassets */; };
 		1F9612C61DB8938100DE647E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F9612C41DB8938100DE647E /* MainMenu.xib */; };
 		1F9612D11DB8938100DE647E /* LogGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612D01DB8938100DE647E /* LogGuruTests.m */; };
-		1F9612DD1DB8946100DE647E /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9612DC1DB8946100DE647E /* MobileDevice.framework */; };
-		1F9612DE1DB8946100DE647E /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9612DC1DB8946100DE647E /* MobileDevice.framework */; };
 		1F9612E11DB8B04F00DE647E /* FIRUSBLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612E01DB8B04F00DE647E /* FIRUSBLoger.m */; };
 		1F9612E21DB8B04F00DE647E /* FIRUSBLoger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9612E01DB8B04F00DE647E /* FIRUSBLoger.m */; };
 		1F9612E41DB8B13000DE647E /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F9612E31DB8B13000DE647E /* AppIcon.icns */; };
+		32EDBF262060F2B2001E4E38 /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32EDBF252060F2B2001E4E38 /* MobileDevice.framework */; };
+		32EDBF272060F2B2001E4E38 /* MobileDevice.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32EDBF252060F2B2001E4E38 /* MobileDevice.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,20 @@
 			remoteInfo = LogGuru;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		32EDBF282060F2B3001E4E38 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				32EDBF272060F2B2001E4E38 /* MobileDevice.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F9612B91DB8938100DE647E /* LogGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +55,10 @@
 		1F9612D01DB8938100DE647E /* LogGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogGuruTests.m; sourceTree = "<group>"; };
 		1F9612D21DB8938100DE647E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F9612DB1DB8944C00DE647E /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
-		1F9612DC1DB8946100DE647E /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileDevice.framework; path = ../../../../../System/Library/PrivateFrameworks/MobileDevice.framework; sourceTree = "<group>"; };
 		1F9612DF1DB8B04F00DE647E /* FIRUSBLoger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRUSBLoger.h; sourceTree = "<group>"; };
 		1F9612E01DB8B04F00DE647E /* FIRUSBLoger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIRUSBLoger.m; sourceTree = "<group>"; };
 		1F9612E31DB8B13000DE647E /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		32EDBF252060F2B2001E4E38 /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileDevice.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9612DD1DB8946100DE647E /* MobileDevice.framework in Frameworks */,
+				32EDBF262060F2B2001E4E38 /* MobileDevice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F9612DE1DB8946100DE647E /* MobileDevice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,7 @@
 		1F9612B01DB8938100DE647E = {
 			isa = PBXGroup;
 			children = (
+				32EDBF252060F2B2001E4E38 /* MobileDevice.framework */,
 				1F9612BB1DB8938100DE647E /* LogGuru */,
 				1F9612CF1DB8938100DE647E /* LogGuruTests */,
 				1F9612BA1DB8938100DE647E /* Products */,
@@ -104,7 +118,6 @@
 				1F9612C71DB8938100DE647E /* Info.plist */,
 				1F9612C41DB8938100DE647E /* MainMenu.xib */,
 				1F9612E31DB8B13000DE647E /* AppIcon.icns */,
-				1F9612DC1DB8946100DE647E /* MobileDevice.framework */,
 				1F9612DB1DB8944C00DE647E /* MobileDevice.h */,
 				1F9612C01DB8938100DE647E /* main.m */,
 			);
@@ -130,6 +143,7 @@
 				1F9612B51DB8938100DE647E /* Sources */,
 				1F9612B61DB8938100DE647E /* Frameworks */,
 				1F9612B71DB8938100DE647E /* Resources */,
+				32EDBF282060F2B3001E4E38 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +359,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LogGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -361,6 +376,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = LogGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -425,6 +441,7 @@
 				1F9612D71DB8938100DE647E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F9612D81DB8938100DE647E /* Build configuration list for PBXNativeTarget "LogGuruTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +450,7 @@
 				1F9612DA1DB8938100DE647E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

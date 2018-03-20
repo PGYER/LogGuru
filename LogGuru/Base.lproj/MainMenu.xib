@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -14,6 +15,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
             <connections>
+                <outlet property="filterInfoLabel" destination="Ur5-6Y-BDf" id="oB9-Oz-uiN"/>
                 <outlet property="logView" destination="gOg-YT-kSR" id="1UU-zK-Zx5"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -497,18 +499,16 @@
                         <rect key="frame" x="-1" y="-1" width="811" height="513"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Srs-La-U9Q">
-                            <rect key="frame" x="1" y="1" width="223" height="133"/>
+                            <rect key="frame" x="1" y="1" width="809" height="511"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView editable="NO" importsGraphics="NO" selectionGranularity="paragraph" findStyle="panel" allowsUndo="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="gOg-YT-kSR">
+                                <textView editable="NO" importsGraphics="NO" selectionGranularity="paragraph" findStyle="panel" allowsUndo="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="gOg-YT-kSR">
                                     <rect key="frame" x="0.0" y="0.0" width="809" height="511"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="223" height="511"/>
+                                    <size key="minSize" width="809" height="511"/>
                                     <size key="maxSize" width="811" height="10000000"/>
                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <size key="minSize" width="223" height="511"/>
-                                    <size key="maxSize" width="811" height="10000000"/>
                                 </textView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -538,6 +538,20 @@
                             <action selector="cleanLog:" target="Voe-Tx-rLC" id="4rC-iv-mLb"/>
                         </connections>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="45C5F44C-D764-455D-A5B7-E1821AFD2E7C" label="Filter" paletteLabel="Filter" id="F3J-N4-M4b" userLabel="Filter">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="96" height="22"/>
+                        <size key="maxSize" width="96" height="22"/>
+                        <textField key="view" verticalHuggingPriority="750" id="Ur5-6Y-BDf">
+                            <rect key="frame" x="0.0" y="14" width="96" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="CGT-wA-Scl">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </toolbarItem>
                     <toolbarItem implicitItemIdentifier="5F9D1607-2B48-4BE5-AB66-9E49E30D18C1" label="fir.im" paletteLabel="fir.im" tag="-1" image="NSInfo" id="t2O-NE-IEI">
                         <connections>
                             <action selector="openAbout:" target="Voe-Tx-rLC" id="T24-iB-NQG"/>
@@ -548,6 +562,7 @@
                     <toolbarItem reference="8bk-Ou-n3l"/>
                     <toolbarItem reference="4Yn-Cb-fKG"/>
                     <toolbarItem reference="rXq-2N-sJa"/>
+                    <toolbarItem reference="F3J-N4-M4b"/>
                     <toolbarItem reference="t2O-NE-IEI"/>
                 </defaultToolbarItems>
             </toolbar>
@@ -557,7 +572,7 @@
     </objects>
     <resources>
         <image name="NSInfo" width="32" height="32"/>
-        <image name="NSPauseTemplate" width="128" height="128"/>
+        <image name="NSPauseTemplate" width="8" height="9"/>
         <image name="NSTrashEmpty" width="32" height="32"/>
     </resources>
 </document>

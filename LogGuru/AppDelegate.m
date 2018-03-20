@@ -15,6 +15,7 @@
 @property (weak) IBOutlet NSTextField *statView;
 @property (unsafe_unretained) IBOutlet NSTextView *logView;
 @property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *filterInfoLabel;
 
 @property (strong) FIRUSBLoger *logger;
 
@@ -53,6 +54,11 @@
 }
 
 
++ (void)logMsg:(NSDictionary *)logInfo {
+    if ([[NSApplication sharedApplication].delegate isKindOfClass:[AppDelegate class]]) {
+        [(AppDelegate *)[NSApplication sharedApplication].delegate logMsg:logInfo];
+    }
+}
 
 -(void)logMsg:(NSDictionary*)logInfo{
     //printf("%s",[msg UTF8String]);
@@ -62,6 +68,13 @@
     }
     
     if ([self.blockProcesses containsObject:logInfo.process]) {
+        return;
+    }
+    
+    if (logInfo.process
+        && self.filterInfoLabel.stringValue
+        && self.filterInfoLabel.stringValue.length > 0
+        && [logInfo.log rangeOfString:self.filterInfoLabel.stringValue].length == 0) {
         return;
     }
     
