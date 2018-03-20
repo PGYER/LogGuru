@@ -7,6 +7,7 @@
 //
 
 #import "FIRUSBLoger.h"
+#import "AppDelegate.h"
 #import "MobileDevice.h"
 #import <AppKit/AppKit.h>
 
@@ -67,8 +68,7 @@ static void SocketCallback(CFSocketRef s, CFSocketCallBackType type, CFDataRef a
                                                  };
                             
                             
-                            
-                            [[NSNotificationCenter defaultCenter] postNotificationName:@"DeviceLog" object:nil userInfo:info];
+                            [AppDelegate logMsg:info];
                         }
                         
                     }

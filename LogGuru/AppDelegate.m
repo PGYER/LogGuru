@@ -54,6 +54,11 @@
 }
 
 
++ (void)logMsg:(NSDictionary *)logInfo {
+    if ([[NSApplication sharedApplication].delegate isKindOfClass:[AppDelegate class]]) {
+        [(AppDelegate *)[NSApplication sharedApplication].delegate logMsg:logInfo];
+    }
+}
 
 -(void)logMsg:(NSDictionary*)logInfo{
     //printf("%s",[msg UTF8String]);

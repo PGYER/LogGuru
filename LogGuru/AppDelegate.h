@@ -10,6 +10,6 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate,NSTokenFieldDelegate>
 
-
++ (void)logMsg:(NSDictionary *)logInfo;
 @end
 
